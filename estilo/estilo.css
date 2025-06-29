@@ -3,9 +3,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
+  /*Variantes importantes*/
   --fonteNormal: Arial, Helvetica, sans-serif;
   --fonte1: "Rubik", sans-serif;
   --corVermelho: #ff0000;
   --corVermelho2: #dd0000;
   --corAmarelo: #ffcc00;
+}
+
+body {
+  font-family: var(--fonteNormal); /*Utilizadno a variante*/
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6; /*Distancia de uma linha a outra*/
+}
+
+header {
+  background-color: var(--corVermelho); /*Utilizando a variante*/
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--fonte1); /*Utilizando a variante*/
+  font-size: 2.5em; /*Tamanho da fonte*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /*Sombra leve nas letras*/
+  color: var(--corAmarelo); /*Utilizando a variante*/
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--fonte1); /*Utilizando a variante*/
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--corVermelho2); /*Utilizando a variante*/
+  color: #333;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 10px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ffc53a;
+  text-align: justify;
+  color: black;
+}
+
+main p {
+  text-indent: 40px;
+}
+
+main img {
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-family: var(--fonte1); /*Utilizando a variante*/
+  color: black; /*Utilizando a variante*/
+  border-bottom: 2px solid black; /*Utilizando a variante*/
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+p,
+ul,
+li {
+  font-size: 1.1em; /*Tamanho da letra*/
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc; /*Tipo do tópico que fica do lado da lista*/
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2px 0px;
+  margin-top: 0px;
+  font-size: 0.9em;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: black;
 }
