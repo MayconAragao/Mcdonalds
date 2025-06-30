@@ -87,6 +87,24 @@ main img {
   border-radius: 10px 0px;
 }
 
+.imagem {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaçamento entre imagem e texto */
+  padding: 20px;
+}
+
+.imagem img {
+  height: auto;
+  width: 500px;
+}
+
+.texto {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
 section {
   margin-bottom: 30px;
 }
@@ -129,4 +147,19 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: black;
+}
+
+@media (max-width: 900px) {
+  .imagem {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .imagem img {
+    width: 100%; /* Deixa a imagem com largura total */
+    max-width: 500px;
+  }
+  .texto {
+    text-align: justify;
+  }
 }
