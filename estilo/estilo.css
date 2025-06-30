@@ -58,7 +58,7 @@ nav a:hover {
 main {
   padding: 20px;
   max-width: 1200px;
-  margin: 10px auto;
+  margin: auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -71,11 +71,20 @@ main p {
   text-indent: 40px;
 }
 
+main hr {
+  border: none; /* Remove a borda padrão do navegador */
+  border-top: 2px solid black; /* Adiciona uma borda superior para aumentar a espessura*/
+  width: 100%; /* Exemplo: define a largura */
+  margin: 30px auto; /* Exemplo: centraliza o <hr> */
+}
+
 main img {
-  max-width: 800px;
+  max-width: 100%; /*largura máxima da imagem*/
   height: auto;
   display: block;
   margin: auto;
+  border: 1px solid black;
+  border-radius: 10px 0px;
 }
 
 section {
