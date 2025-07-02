@@ -67,15 +67,15 @@ main {
   color: black;
 }
 
-main p {
-  text-indent: 40px;
+main h2 {
+  font: var(--fonte1);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-main hr {
-  border: none; /* Remove a borda padrão do navegador */
-  border-top: 2px solid black; /* Adiciona uma borda superior para aumentar a espessura*/
-  width: 100%; /* Exemplo: define a largura */
-  margin: 30px auto; /* Exemplo: centraliza o <hr> */
+main p {
+  text-indent: 40px;
 }
 
 main img {
